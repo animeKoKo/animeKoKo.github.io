@@ -3,11 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUi from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui'
 import axios from 'axios'
 
-Vue.use(ElementUi)
+import './assets/scss/index.scss'
+
+
+Vue.use(ElementUI)
 
 Vue.prototype.$axios=axios
 
