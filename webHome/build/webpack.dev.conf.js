@@ -20,7 +20,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
 
-  // these devServer options should be customized in /config/index.js
+  // these devServer options should be customized in /config/blogLib.js
   devServer: {
     clientLogLevel: 'warning',
     historyApiFallback: {
@@ -63,7 +63,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
-      }
+      },
+      {
+        from: path.resolve(__dirname, '../../blog-lib'),
+        to: config.dev.assetsSubDirectory,
+        ignore: ['.*']
+      },
     ])
   ]
 })

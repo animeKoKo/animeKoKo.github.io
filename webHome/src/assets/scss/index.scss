@@ -9,12 +9,21 @@ body{
 }
 p{
   font-weight: normal;
+  font-size: 14px;
+  margin: 8px 0;
+}
+h3,h4{
+  margin: 10px 0;
 }
 
-
 .router-fade-enter-active, .router-fade-leave-active {
-  transition: opacity .3s;
+  transition: opacity .6s;
+
 }
 .router-fade-enter, .router-fade-leave-to{
   opacity: 0;
+
+}
+.router-fade-leave-to{
+  display: none;
 }

@@ -13,6 +13,7 @@
   export default {
     created() {
       this.$route.name === 'home' ? this.showBGBlur = true : this.showBGBlur = false
+
     },
     watch: {
       $route(to, from) {

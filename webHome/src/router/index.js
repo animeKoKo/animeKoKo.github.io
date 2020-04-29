@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import meBar from '../components/meBar'
 import list from '../components/list'
+import showBlog from '../components/show-blog'
 
 Vue.use(Router)
 
@@ -17,6 +17,11 @@ export default new Router({
       path: '/list',
       name: 'blog-list',
       component: list
+    },
+    {
+      path: '/show-blog',
+      name: 'show-blog-info',
+      component: showBlog
     }
   ]
 })
