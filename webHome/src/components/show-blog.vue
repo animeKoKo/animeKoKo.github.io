@@ -1,8 +1,9 @@
 <template>
-    <div>
-      <div>show-blog</div>
-      <div v-html="html"></div>
-    </div>
+    <el-row>
+      <el-col :span="16" :offset="4">
+        <div class="blog-bg" v-html="html"></div>
+      </el-col>
+    </el-row>
 </template>
 
 <script>
@@ -22,6 +23,11 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.blog-bg{
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 40px;
+}
 </style>
